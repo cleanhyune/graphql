@@ -1,0 +1,11 @@
+type Movie {
+    id: Int!
+    url: String!
+    title: String!
+    rating: Float!
+    genres: [String]!
+}
+
+type Query {
+    movies(limit: Int, minimum_rating: Int): [Movie]!
+}
